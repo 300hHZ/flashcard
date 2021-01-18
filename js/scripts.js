@@ -3,7 +3,6 @@ $(document).ready(function() {
 
   $(".clickable").click(function() {
     newID = $(this).attr('id');
-    console.log(currID + "1" + newID);
     if(!(currID === "" )){ 
       $("#" + currID + "-front").toggle();
       $("#" + currID + "-back").toggle();
@@ -18,7 +17,6 @@ $(document).ready(function() {
       currID = "";
     }
     
-    console.log(currID + "2" + newID);
   });
 });
 
